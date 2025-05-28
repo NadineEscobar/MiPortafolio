@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Portafolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-black text-white pt-20">
+
+  <nav class="bg-black border-b border-violet-800 px-4 py-3 sm:px-8 fixed top-0 w-full z-50">
+  <div class="flex justify-between items-center max-w-5xl mx-auto">
+    <h1 class="text-lg font-bold text-violet-400">Nadine Escobar</h1>
+    <button id="menu-btn" class="text-violet-300 sm:hidden focus:outline-none">
+      ☰
+    </button>
+    <ul id="nav-links" class="hidden sm:flex space-x-6 text-sm text-gray-200">
+      <li><a href="#sobre-mi" class="hover:text-violet-400">Sobre mí</a></li>
+      <li><a href="#seccion-frameworks" class="hover:text-violet-400">Frameworks</a></li>
+      <li><a href="#seccion-estudios" class="hover:text-violet-400">Estudios</a></li>
+      <li><a href="#seccion-proyectos" class="hover:text-violet-400">Proyectos</a></li>
+      <li><a href="#contacto" class="hover:text-violet-400">Contacto</a></li>
+    </ul>
+  </div>
+  <ul id="mobile-menu" class="sm:hidden hidden mt-3 space-y-2 text-gray-200 text-sm">
+    <li><a href="#sobre-mi" class="block px-2 hover:text-violet-400">Sobre mí</a></li>
+    <li><a href="#seccion-frameworks" class="block px-2 hover:text-violet-400">Frameworks</a></li>
+    <li><a href="#seccion-estudios" class="block px-2 hover:text-violet-400">Estudios</a></li>
+    <li><a href="#seccion-proyectos" class="block px-2 hover:text-violet-400">Proyectos</a></li>
+    <li><a href="#contacto" class="block px-2 hover:text-violet-400">Contacto</a></li>
+  </ul>
+</nav>
+
+  <!-- Header con foto -->
+  <header class="flex flex-col items-center text-center p-6 sm:p-8 bg-gradient-to-b from-black via-purple-900 to-black">
+    <img src="./img/mio1.png" alt="Foto de perfil" class="w-32 h-32 sm:w-40 sm:h-40 rounded-full border-4 border-violet-500 shadow-lg" />
+    <h1 class="text-2xl sm:text-3xl font-bold mt-4">Hola, soy Nadine Escobar</h1>
+    <p class="text-violet-300 mt-2 text-base sm:text-lg">Programadora | Apasionada por la tecnología</p>
+  </header>
+
+  <!-- Sección Presentación -->
+  <section id="sobre-mi" class="scroll-mt-36 p-4 sm:p-8 max-w-3xl mx-auto ">
+    <h2 class="text-xl sm:text-2xl font-semibold text-violet-400 mb-2">Sobre mí</h2>
+    <p class="text-gray-300 text-sm sm:text-base">Soy una programadora apasionada por construir soluciones digitales con tecnologías modernas. Me encanta aprender y desarrollar proyectos que mezclen creatividad y funcionalidad.</p>
+  </section>
+
+  <!-- Frameworks -->
+  <section id="seccion-frameworks" class="scroll-mt-36 p-4 sm:p-8 max-w-3xl mx-auto">
+    <h2 class="text-xl sm:text-2xl font-semibold text-violet-400 mb-2">Frameworks y Tecnologías</h2>
+    <ul id="frameworks" class="list-disc list-inside text-gray-300 text-sm sm:text-base"></ul>
+  </section>
+
+  <!-- Estudios -->
+  <section id="seccion-estudios" class="scroll-mt-36 p-4 sm:p-8 max-w-4xl mx-auto">
+    <h2 class="text-xl sm:text-2xl font-semibold text-violet-400 mb-4">Estudios</h2>
+    <ul id="estudios" class="grid grid-cols-1 sm:grid-cols-2 gap-6"></ul>
+  </section>
+
+  <!-- Proyectos -->
+  <section id="seccion-proyectos" class="scroll-mt-24 p-4 sm:p-8 max-w-5xl mx-auto">
+    <h2 class="text-xl sm:text-2xl font-semibold text-violet-400 mb-4">Proyectos</h2>
+    <div id="proyectos" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="p-4 sm:p-8 max-w-3xl mx-auto scroll-mt-24">
+    <h2 class="text-xl sm:text-2xl font-semibold text-violet-400 mb-2">Contacto</h2>
+    <ul class="text-gray-300 space-y-1 text-sm sm:text-base">
+      <li>Email: <a href="mailto:nadineescobar03@gmail.com" class="text-violet-300">Nadineescobar03@gmail.com</a></li>
+      <li>Teléfono: +54 9 11 60047770</li>
+      <li>LinkedIn: <a href="https://www.linkedin.com/in/nadine-escobar" class="text-violet-300" target="_blank">https://www.linkedin.com/in/nadine-escobar</a></li>
+      <li>GitHub: <a href="https://github.com/NadineEscobar" class="text-violet-300" target="_blank">https://github.com/NadineEscobar</a></li>
+      <li><a href="cv.pdf" class="text-violet-400 underline">Descargar CV</a></li>
+    </ul>
+  </section>
+
+  <footer class="text-center text-sm text-gray-500 p-4">
+    © 2025 Nadine Escobar - Hecho con 💻, ☕ y muchas líneas de código.
+  </footer>
+
+  <script defer src="script.js"></script>
+
+</body>
+</html>
+
