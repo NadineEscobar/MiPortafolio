@@ -73,7 +73,7 @@ export const proyectos = [
   {
     titulo: 'Web de recetas',
     descripcion: 'Sitio de Recetas realizada en un proyecto de Desarrollo Web.',
-    link: 'https://github.com/NadineEscobar/Recetando-SASS',
+    link: 'https://recetando-sass.vercel.app/',
     imagen: 'https://res.cloudinary.com/dgy7rqtqn/image/upload/w_600,f_auto,q_auto/v1748468881/receteandoR-Sass_sfoik2.jpg',
     tecnologias: [
       { nombre: 'HTML', icono: 'logos:html-5' },
