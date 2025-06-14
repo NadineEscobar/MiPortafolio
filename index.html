@@ -8,7 +8,8 @@
   <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
   <style>
     html {
-    scroll-padding-top: 5.5rem; /* ajustá según altura de tu navbar */
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
   }
     body { 
       font-family: 'Inter', sans-serif; 
@@ -18,33 +19,33 @@
 <body class="bg-black text-white pt-20">
 
   <nav class="bg-black border-b border-violet-800 px-4 py-3 sm:px-8 fixed top-0 w-full z-50">
-  <div class="flex justify-between items-center max-w-5xl mx-auto">
-    <h1 class="text-lg font-bold text-violet-400">Nadine Escobar</h1>
-    <button id="menu-btn" class="text-violet-300 sm:hidden focus:outline-none">
-      ☰
-    </button>
-    <ul id="nav-links" class="hidden sm:flex space-x-6 text-sm text-gray-200">
-      <li><a href="#sobre-mi" class="hover:text-violet-400">Sobre mí</a></li>
-      <li><a href="#seccion-frameworks" class="hover:text-violet-400">Skills</a></li>
-      <li><a href="#seccion-estudios" class="hover:text-violet-400">Estudios</a></li>
-      <li><a href="#seccion-proyectos" class="hover:text-violet-400">Proyectos</a></li>
-      <li><a href="#contacto" class="hover:text-violet-400">Contacto</a></li>
+    <div class="flex justify-between items-center max-w-5xl mx-auto">
+      <h1 class="text-lg font-bold text-violet-400">Nadine Escobar</h1>
+      <button id="menu-btn" class="text-violet-300 sm:hidden focus:outline-none">
+        ☰
+      </button>
+      <ul id="nav-links" class="hidden sm:flex space-x-6 text-sm text-gray-200">
+        <li><a href="#sobre-mi" class="text-violet-300 hover:underline hover:text-purple-500 transition-colors">Sobre mí</a></li>
+        <li><a href="#seccion-frameworks" class="text-violet-300 hover:underline hover:text-purple-500 transition-colors">Skills</a></li>
+        <li><a href="#seccion-estudios" class="text-violet-300 hover:underline hover:text-purple-500 transition-colors">Estudios</a></li>
+        <li><a href="#seccion-proyectos" class="text-violet-300 hover:underline hover:text-purple-500 transition-colors">Proyectos</a></li>
+        <li><a href="#contacto" class="text-violet-300 hover:underline hover:text-purple-500 transition-colors">Contacto</a></li>
+      </ul>
+    </div>
+    <ul id="mobile-menu" class="sm:hidden hidden mt-3 space-y-2 text-gray-200 text-sm">
+      <li><a href="#sobre-mi" class="block px-2 hover:text-violet-400">Sobre mí</a></li>
+      <li><a href="#seccion-frameworks" class="block px-2 hover:text-violet-400">Skills</a></li>
+      <li><a href="#seccion-estudios" class="block px-2 hover:text-violet-400">Estudios</a></li>
+      <li><a href="#seccion-proyectos" class="block px-2 hover:text-violet-400">Proyectos</a></li>
+      <li><a href="#contacto" class="block px-2 hover:text-violet-400">Contacto</a></li>
     </ul>
-  </div>
-  <ul id="mobile-menu" class="sm:hidden hidden mt-3 space-y-2 text-gray-200 text-sm">
-    <li><a href="#sobre-mi" class="block px-2 hover:text-violet-400">Sobre mí</a></li>
-    <li><a href="#seccion-frameworks" class="block px-2 hover:text-violet-400">Skills</a></li>
-    <li><a href="#seccion-estudios" class="block px-2 hover:text-violet-400">Estudios</a></li>
-    <li><a href="#seccion-proyectos" class="block px-2 hover:text-violet-400">Proyectos</a></li>
-    <li><a href="#contacto" class="block px-2 hover:text-violet-400">Contacto</a></li>
-  </ul>
-</nav>
+  </nav>
 
-  <!-- Header con foto -->
+  <!-- Header -->
   <header class="flex flex-col items-center text-center p-6 sm:p-8 bg-gradient-to-b from-black via-purple-900 to-black">
     <img src="https://res.cloudinary.com/dgy7rqtqn/image/upload/v1748468912/mio1_szqqmi.png" alt="Foto de perfil" class="w-32 h-32 sm:w-40 sm:h-40 rounded-full border-4 border-violet-500 shadow-lg" />
     <h1 class="text-2xl sm:text-3xl font-bold mt-4">Hola, soy Nadine Escobar</h1>
-    <p class="text-violet-300 mt-2 text-base sm:text-lg">Programadora | Apasionada por la tecnología</p>
+    <p class="text-violet-300 mt-2 text-base sm:text-lg">Apasionada por la Programación</p>
   </header>
 
   <!-- Sección Presentación -->
@@ -52,6 +53,8 @@
     <h2 class="text-xl sm:text-2xl font-semibold text-violet-400 mb-2">Sobre mí</h2>
     <p class="text-gray-300 text-sm sm:text-base"> Me apasiona el mundo de la tecnología y el desarrollo de software. Adquirí experiencia en diferentes lenguajes de programación y herramientas, y me encanta crear soluciones que marquen la diferencia. Actualmente, estoy ampliando mis conocimientos en la Diplomatura de Desarrollo Full Stack en Coderhouse, lo que me permite profundizar en el desarrollo tanto del frontend como del backend. Mi objetivo es seguir aprendiendo y aplicando nuevas tecnologías, siempre buscando mejorar y enfrentar nuevos desafíos en el mundo IT. Estoy emocionada por continuar creciendo profesionalmente aportando mi creatividad y habilidades a futuros proyectos.</p>
   </section>
+
+  <hr class="border-t border-violet-600/40 my-8 mx-auto w-1/2"/>
 
   <!-- Frameworks -->
   <section id="seccion-frameworks" class="scroll-mt-36 p-4 sm:p-8 max-w-5xl mx-auto">
@@ -70,8 +73,9 @@
       <ul id="habilidades" class="list-disc list-inside text-gray-300 text-sm sm:text-base"></ul>
     </div>
   </div>
-</section>
+  </section>
 
+  <hr class="border-t border-violet-600/40 my-8 mx-auto w-1/2"/>
 
   <!-- Estudios -->
   <section id="seccion-estudios" class="scroll-mt-36 p-4 sm:p-8 max-w-4xl mx-auto">
@@ -79,37 +83,42 @@
     <ul id="estudios" class="grid grid-cols-1 sm:grid-cols-2 gap-6"></ul>
   </section>
 
+  <hr class="border-t border-violet-600/40 my-8 mx-auto w-1/2"/>
+
+
   <!-- Proyectos -->
   <section id="seccion-proyectos" class="scroll-mt-24 p-4 sm:p-8 max-w-5xl mx-auto">
     <h2 class="text-xl sm:text-2xl font-semibold text-violet-400 mb-4">Proyectos</h2>
     <div id="proyectos" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
   </section>
 
+  <hr class="border-t border-violet-600/40 my-8 mx-auto w-1/2"/>
+
   <!-- Contacto -->
-  <section id="contacto" class="p-4 sm:p-8 max-w-3xl mx-auto scroll-mt-24">
+  <section id="contacto" class="p-4 sm:p-8 max-w-3xl mx-auto text-center scroll-mt-24">
     <h2 class="text-xl sm:text-2xl font-semibold text-violet-400 mb-2">Contacto</h2>
-    <ul class="text-gray-300 space-y-2 text-sm sm:text-base">
-  <li class="flex items-center gap-2">
+    <ul class="text-gray-300 space-y-4 text-sm sm:text-base text-center">
+  <li class="flex justify-center items-center gap-2">
     <span class="iconify text-violet-300" data-icon="mdi:email-outline"></span>
     <a href="mailto:nadineescobar03@gmail.com" class="text-violet-300">nadineescobar03@gmail.com</a>
   </li>
-  <li class="flex items-center gap-2">
+  <li class="flex justify-center items-center gap-2">
     <span class="iconify text-violet-300" data-icon="mdi:phone"></span>
     +54 9 11 60047770
   </li>
-  <li class="flex items-center gap-2">
+ <li class="flex justify-center items-center gap-2">
     <span class="iconify text-violet-300" data-icon="mdi:linkedin"></span>
-    <a href="https://www.linkedin.com/in/nadine-escobar" class="text-violet-300" target="_blank">linkedin.com/in/nadine-escobar</a>
+    <a href="https://www.linkedin.com/in/nadine-escobar" class="text-violet-300" target="_blank" rel="noopener noreferrer">linkedin.com/in/nadine-escobar</a>
   </li>
-  <li class="flex items-center gap-2">
+  <li class="flex justify-center items-center gap-2">
     <span class="iconify text-violet-300" data-icon="mdi:github"></span>
-    <a href="https://github.com/NadineEscobar" class="text-violet-300" target="_blank">github.com/NadineEscobar</a>
+    <a href="https://github.com/NadineEscobar" class="text-violet-300" target="_blank" rel="noopener noreferrer">github.com/NadineEscobar</a>
   </li>
-  <li class="flex items-center gap-2">
+  <li class="flex justify-center items-center gap-2">
     <span class="iconify text-violet-300" data-icon="mdi:file-download-outline"></span>
     <a href="./docs/CV-Nadine escobar.pdf" class="text-violet-400 underline">Descargar CV</a>
   </li>
-</ul>
+  </ul>
 
   </section>
 
@@ -117,8 +126,7 @@
     © 2025 Nadine Escobar - Hecho con 💻, ☕ y muchas líneas de código.
   </footer>
 
-  <script defer src="script.js"></script>
+  <script defer src="script.js" type="module"></script>
 
 </body>
 </html>
-
