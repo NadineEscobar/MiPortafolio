@@ -4,6 +4,7 @@ export const frameworks = [
   { nombre: 'HTML5', icono: 'logos:html-5' },
   { nombre: 'CSS3', icono: 'logos:css-3' },
   { nombre: 'TailwindCSS', icono: 'logos:tailwindcss-icon' },
+  { nombre: 'Bootstrap', icono: 'logos:bootstrap' },
   { nombre: 'SASS', icono: 'logos:sass' },
   { nombre: 'React', icono: 'logos:react' },
   { nombre: 'Node.js', icono: 'logos:nodejs-icon' },
@@ -47,6 +48,11 @@ export const estudios = [
     imagenGrande: 'https://res.cloudinary.com/dgy7rqtqn/image/upload/v1749855218/9b6a5b42-6930-461f-b627-1508608fd8ac_eztnal.png'
   },
   {
+    titulo: 'React - Coderhouse',
+    imagen: 'https://res.cloudinary.com/dgy7rqtqn/image/upload/w_300,f_auto,q_auto/v1757021883/8a591155-32ec-45e8-9249-664ecfe4fb38_utjvj5.png',
+    imagenGrande: 'https://res.cloudinary.com/dgy7rqtqn/image/upload/v1757021883/8a591155-32ec-45e8-9249-664ecfe4fb38_utjvj5.png'
+  },
+  {
     titulo: 'Developer - No Country',
     imagen: 'https://res.cloudinary.com/dgy7rqtqn/image/upload/w_300,f_auto,q_auto/v1748468831/nNo-country_rkswzs.jpg',
     imagenGrande: 'https://res.cloudinary.com/dgy7rqtqn/image/upload/v1748468831/nNo-country_rkswzs.jpg'
@@ -61,11 +67,6 @@ export const estudios = [
     imagen: 'https://res.cloudinary.com/dgy7rqtqn/image/upload/w_300,f_auto,q_auto/v1748468834/web-responsi_vahjph.png',
     imagenGrande: 'https://res.cloudinary.com/dgy7rqtqn/image/upload/v1748468834/web-responsi_vahjph.png'
   },
-  {
-    titulo: 'Bibliotecas de Desarrollo Front-end - FreeCodeCamp',
-    imagen: 'https://res.cloudinary.com/dgy7rqtqn/image/upload/w_300,f_auto,q_auto/v1748468829/bibli-desa_front_ihxpmk.png',
-    imagenGrande: 'https://res.cloudinary.com/dgy7rqtqn/image/upload/v1748468829/bibli-desa_front_ihxpmk.png'
-  }
 ];
 
 // Datos de proyectos
@@ -92,6 +93,17 @@ export const proyectos = [
       { nombre: 'JavaScript', icono: 'logos:javascript' }
     ]
   },
+    {
+    titulo: 'Mockup Studio',
+    descripcion: 'Aplicación web desarrollada con React para crear y personalizar mockups de forma intuitiva. Permite visualizar diseños en diferentes plantillas y exportarlos fácilmente',
+    link: 'https://github.com/NadineEscobar/MockupStudio',
+    imagen: 'https://res.cloudinary.com/dgy7rqtqn/image/upload/w_600,f_auto,q_auto/v1757021666/Captura_de_pantalla_4-9-2025_18341_proyectofinal-escobar.vercel.app_paazeo.jpg',
+    tecnologias: [
+      { nombre: 'React', icono: 'logos:react' },
+      {  nombre: 'Bootstrap', icono: 'logos:bootstrap' },
+      { nombre: 'JavaScript', icono: 'logos:javascript' }
+    ]
+  },
   {
     titulo: 'Ruleta personalizada',
     descripcion: 'Ruleta interactiva desarrollada con JS y CSS con animación fluida de giro y detección aleatoria de resultados al deteners',
@@ -108,17 +120,6 @@ export const proyectos = [
     descripcion: 'Un simple juego de Ta Te Ti, detección de ganador o empate y diseño interactivo y fácil de usar',
     link: 'https://github.com/NadineEscobar/JuegoDelTaTeTi',
     imagen: 'https://res.cloudinary.com/dgy7rqtqn/image/upload/w_600,f_auto,q_auto/v1748468883/taTeTi_bwfhqx.png',
-    tecnologias: [
-      { nombre: 'HTML', icono: 'logos:html-5' },
-      { nombre: 'CSS', icono: 'logos:css-3' },
-      { nombre: 'JavaScript', icono: 'logos:javascript' }
-    ]
-  },
-  {
-    titulo:'E-commerce',
-    descripcion: 'Proyecto de práctica de una página web sobre un almacen con sus distintos productos, ofertas, etc. Este proyecto se encuentra en proceso.',
-    link: 'https://github.com/NadineEscobar/e-commerce-almacen',
-    imagen: 'https://res.cloudinary.com/dgy7rqtqn/image/upload/w_600,f_auto,q_auto/v1748468879/e-commerce_mri8ai.png',
     tecnologias: [
       { nombre: 'HTML', icono: 'logos:html-5' },
       { nombre: 'CSS', icono: 'logos:css-3' },
