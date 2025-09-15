@@ -74,7 +74,7 @@ export const proyectos = [
   {
     titulo: 'Web de recetas',
     descripcion: 'Sitio de Recetas realizada en un proyecto de Desarrollo Web.',
-    link: 'https://recetando-sass.vercel.app/',
+    link: 'https://github.com/NadineEscobar/Recetando-SASS',
     imagen: 'https://res.cloudinary.com/dgy7rqtqn/image/upload/w_600,f_auto,q_auto/v1748468881/receteandoR-Sass_sfoik2.jpg',
     tecnologias: [
       { nombre: 'HTML', icono: 'logos:html-5' },
@@ -85,7 +85,7 @@ export const proyectos = [
   {
     titulo: 'Mi Portafolio',
     descripcion: 'Sitio de mi Portafolio personal',
-    link: 'https://mi-portafolio-virid-eight.vercel.app/',
+    link: 'https://github.com/NadineEscobar/MiPortafolio',
     imagen: 'https://res.cloudinary.com/dgy7rqtqn/image/upload/w_600,f_auto,q_auto/v1748474985/Captura_de_pantalla_28-5-2025_202928_127.0.0.1_mvcoag.jpg',
     tecnologias: [
       { nombre: 'HTML', icono: 'logos:html-5' },
